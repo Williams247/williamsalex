@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.swal-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c2f3f;
+}

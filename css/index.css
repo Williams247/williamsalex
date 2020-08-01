@@ -1,0 +1,249 @@
+@import './defaults.css';
+@import './skills.css';
+
+body {
+    overflow: hidden;
+}
+
+.modal-body {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1500;
+}
+
+.modal-container-image, 
+.modal-container-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-container-text {
+    color: gray;
+}
+
+.text {
+    margin-left: 1rem;
+}
+
+.loader {
+    width: 3rem;
+    height: 3rem;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    border-left: 8px solid gray;
+    border-right: 8px solid gray;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 2s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(.9);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(.9);
+    }
+}
+
+#header {
+    background:white !important;
+}
+
+.scroll-start {
+    box-shadow: 2px 2px 54px black;
+}
+
+.scroll-end {
+    box-shadow: none;
+}
+
+.link-list {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.logo {
+    width: 4rem;
+}
+
+#main {
+    border: none;
+}
+
+#main-image {
+    height: 400px;
+}
+
+.text-container {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 400px;
+}
+
+#no-padding {
+    padding: 0;
+}
+
+.main-text {
+    font-size: 7rem;
+}
+
+.description {
+    padding-top: 7rem;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.desc-header {
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.desc-header-2 {
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.desc {
+    font-size: 1.2rem;
+}
+
+#about, 
+#projects {
+    margin-top: 2rem;
+    width: 11rem;
+    height: 4rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.about-head {
+    font-weight: bold;
+}
+
+.main-container {
+    margin-top: 6rem;
+}
+
+.desc-main {
+    padding-top: 4rem;
+    color: grey;
+    font-size: 1.1rem;
+}
+
+.williams-container {
+    padding-top: 4rem;
+}
+
+.williams {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: brightness(.9);
+}
+
+#skill-set {
+    padding-top: 3rem;
+}
+
+#skill-container {
+    margin-top: 4rem;
+}
+
+.skills {
+    font-weight: bold;
+    background: black;
+    padding: 1rem;
+    width: 12rem;
+    color: rgb(96, 96, 240);
+}
+
+.skill-text {
+    color: white;
+    padding: 5px;
+}
+
+.list-group li {
+    border: none;
+}
+
+.skill-head {
+    cursor: pointer;
+    color: gray;
+    transition: 333ms;
+    width: 15rem;
+}
+
+.skill-head:hover {
+    color: black;
+    transform: scale(.9);
+}
+
+.no-extra-skill {
+    color: gray;
+    cursor: initial;
+}
+
+.no-extra-skill:hover {
+    transform: none;
+}
+
+#location {
+    margin-top: 5rem
+}
+
+#location iframe {
+    width: 100%;
+    height: 88vh;
+}
+
+#contact {
+    background: black;
+}
+
+footer {
+    background: rgb(12, 12, 12);
+    height: 55vh;
+    width: 100%;
+    color: white;
+    margin-top: -1rem;
+}
+
+.Contact-head {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.list-group-horizontal-md li {
+    background: transparent;
+}
+
+.icons-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container span {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon-container:hover span {
+    color: gray;
+}
+

@@ -1,0 +1,184 @@
+.modal-body-2 {
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 1100;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.1rem;
+}
+
+.animate-in {
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-duration: 888ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: .5;
+        margin-top: -5rem;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-out {
+    animation-name: fade-out;
+    animation-iteration-count: 1;
+    animation-duration: 888ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: .5;
+        margin-top: -55rem;
+    }
+}
+
+#image-container {
+    margin-top: 4rem;
+}
+
+.skill {
+    width: 100%;
+    box-shadow: 0 0 28px black;
+}
+
+#close {
+    color: white;
+    float: right;
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: 555ms ease;
+}
+
+#close:hover {
+    color: red;
+}
+
+#close-image-modal {
+    font-size: 1.6rem;
+    color: white;
+}
+
+#float-icon-left {
+    float: left;
+}
+
+#float-icon-right {
+    float: right;
+}
+
+.font-font {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.go-left {
+    float: left;
+    margin-top: .7rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.go-right {
+    float: right;
+    margin-top: .7rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.go-left,
+.go-right {
+    transition: 555ms ease-in-out;
+}
+
+.go-left:hover, 
+.go-right:hover {
+    background: white;
+    color: black;
+}
+
+.go-left:active, 
+.go-right:active {
+    background: #313131;
+    color: white;
+}
+
+#skills-container {
+    margin-top: 3rem;
+}
+
+.zero-padding-margin {
+    padding: 0;
+}
+
+.code {
+    width: 95%;
+    margin: .4rem 2.5%;
+    font-weight: bold;
+    padding: 1.5rem;
+    color: white;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.plus-sign {
+    transition: 1s ease;
+}
+
+.is-skill-active-color {
+    background: #0062CC;
+    border: 3px solid #92C7FF;
+}
+
+.is-skill-active-state {
+    transform: rotate(40deg);
+    animation-name: spindle;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes spindle {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    60% {
+        transform: rotate(50deg)
+    }
+    
+    70% {
+        transition: rotate(50deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
