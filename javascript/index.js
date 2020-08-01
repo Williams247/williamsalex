@@ -84,10 +84,6 @@ const mainImage = document.querySelector('.skill');
 //Image modal
 const showSkillsModal = document.querySelector('#skills-modal');
 
-window.onload = () => {
-  showSkillsModal.classList.add('hidden')
-}
-
 //Function to show full image
 const showImage = index => {
   currentIndex = index;
