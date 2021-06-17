@@ -6,7 +6,7 @@ const urls = {
   facebookURL: 'https://www.facebook.com/williams.godswill.39/',
   twitterURL: 'https://twitter.com/William33199979',
   linkedinURL: 'https://www.linkedin.com/in/williams-alex-17b3201a3/',
-  resumeURL: 'resume/my_resume.pdf'
+  resumeURL: 'resume/resume.pdf'
 };
 
 //Destructured route object
@@ -23,7 +23,6 @@ const { firstEmail, lastEmail } = emails;
 
 //Navigation bar
 const nav = document.querySelector('#header');
-
 //Scroll function to the navigation bar
 window.addEventListener('scroll', scrollFunc);
 
@@ -67,9 +66,6 @@ const imagePaths = [
   'images/skills/vue.jpg',
   'images/skills/vuex.png',
   'images/skills/nodejs.png',
-  'images/skills/python.png',
-  'images/skills/django.jpeg',
-  'images/skills/mysql.png',
   'images/skills/mongodb.png',
   'images/skills/git.png',
   'images/skills/rest_api.jpg'
@@ -120,8 +116,8 @@ const previous = () => {
 //Shows the next image
 const next = () => {
   currentIndex++;
-  if(currentIndex > 15) {
-    currentIndex = 15
+  if(currentIndex > 12) {
+    currentIndex = 12
   }
   showImage(currentIndex);
   switchActiveClass();
